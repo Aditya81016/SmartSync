@@ -1,5 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
+
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -20,9 +20,9 @@ const router = createRouter({
       component: () => import('../views/AddView.vue')
     },
     {
-      path: '/tasks',
-      name: 'tasks',
-      component: () => import('../views/TasksView.vue')
+      path: '/todos',
+      name: 'todos',
+      component: () => import('../views/TodosView.vue')
     },
     {
       path: '/settings',

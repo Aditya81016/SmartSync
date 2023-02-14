@@ -1,12 +1,12 @@
 <template>
   <main>
-    <h1>Your Notes</h1>
+    <h1>Your Todos</h1>
     <ol>
-      <li v-for="note in data.notes.all" :key="note">
+      <li v-for="todo in data.todos.all" :key="todo">
         <div class="box">
-          <h6 class="title text-wrap">{{ note.title }}</h6>
+          <h6 class="title text-wrap">{{ todo.title }}</h6>
           <hr />
-          <p class="content text-wrap">{{ note.content }}</p>
+          <p class="content text-wrap">{{ todo.content }}</p>
         </div>
       </li>
     </ol>
@@ -15,7 +15,7 @@
 
 <script>
 export default {
-  name: "Notes",
+  name: "Tasks",
   props: {
     data: { type: Object, required: true },
   },
@@ -46,7 +46,7 @@ ol {
 }
 
 li {
-  width: 100%
+  width: 100%;
 }
 
 .box {
@@ -59,5 +59,4 @@ li {
   box-shadow: 0px 10px 20px 0px rgb(0, 0, 0);
   /* margin: 0 0 0 -30px; */
 }
-
 </style>

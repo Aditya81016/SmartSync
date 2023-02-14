@@ -54,7 +54,7 @@ export default {
         if (ele.classList.contains("Home")) this.$router.push("/");
         else if (ele.classList.contains("Notes")) this.$router.push("/notes");
         else if (ele.classList.contains("Add")) this.$router.push("/add");
-        else if (ele.classList.contains("Tasks")) this.$router.push("/tasks");
+        else if (ele.classList.contains("Tasks")) this.$router.push("/todos");
         else if (ele.classList.contains("Settings")) this.$router.push("/settings");
       }
     },
